@@ -51,7 +51,7 @@ Replace the paragraph if you want to change the tagline.
 In `index.html`, search for `<!-- TODO: replace contact -->`:
 - **Email**: Update `hello@crizgen.com` and its `href="mailto:..."`
 - **Phone**: Update `+91 00000 00000` and its `href="tel:..."`
-- **WhatsApp**: Update the placeholder number in both the contact panel link and the floating WhatsApp button:
+- **WhatsApp**: Update the number in the `href` and `data-whatsapp-app` attributes on both the contact panel link and the floating WhatsApp button. The native app link opens WhatsApp when installed; otherwise, the `wa.me` link is used as a web fallback:
   ```html
   href="https://wa.me/910000000000?text=Hello%20Crizgen..."
   ```
