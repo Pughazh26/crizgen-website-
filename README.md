@@ -13,10 +13,7 @@ Built with clean, vanilla HTML5, CSS3, and modern JavaScript. Zero build steps, 
 - **Single Accent Color Architecture**: Modern tech palette with a single primary accent (`#6366f1` Electric Indigo) defined via CSS variables at the top of `style.css` for instant customization.
 - **Fluid Typography & Spacing**: Clean `clamp()` scaling using the Google Font **Inter** with native system fallbacks.
 - **Accessible & Performance-Minded**: Semantic HTML5, accessible form labels, skip-to-content link, WCAG AA/AAA contrast ratios, and `prefers-reduced-motion` compliance.
-- **Interactive UI Previews**: Custom SVG mockups showcasing sample client projects:
-  - **FinPulse**: Real-time fintech analytics dashboard with animated sparkline
-  - **OmniDeliver**: On-demand courier mobile app with live GPS map preview
-  - **AuraHealth**: Telehealth consultation portal and patient vitals
+- **What We Build**: Clear capability cards for business websites, custom web apps, and mobile experiences.
 - **5-Stage Development Workflow**: Discuss ➔ Design ➔ Develop ➔ Launch ➔ Support.
 - **Interactive Contact Form**: Integrated with Formspree / Web3Forms support, client-side input validation, and loading indicators.
 - **Floating WhatsApp Button**: Sticky action button at bottom-right with pulsating badge and direct message intent.
