@@ -39,18 +39,16 @@ crizgen/
 
 ## 🔍 Replacing Placeholders (Search for `TODO`)
 
-All temporary values, tagline placeholders, and dummy contact details are flagged with standard `TODO` comments. Search for `TODO` across the project files to quickly update them:
+Temporary values and dummy contact details are flagged with standard `TODO` comments. Search for `TODO` across the project files to quickly update them:
 
 ### 1. Tagline
-In `index.html`, locate:
+The hero tagline in `index.html` is:
 ```html
-<!-- TODO: replace tagline -->
 <p class="hero-subtext reveal-fade">
-  We design and build fast, scalable web apps and mobile solutions that turn ambitious ideas into market-defining experiences.
+  Simple start. Scalable growth.
 </p>
-<!-- /TODO: replace tagline -->
 ```
-Replace the paragraph with your finalized company tagline.
+Replace the paragraph if you want to change the tagline.
 
 ### 2. Contact Information
 In `index.html`, search for `<!-- TODO: replace contact -->`:
