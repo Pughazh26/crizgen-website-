@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Crizgen | Web & Mobile App Development Company in Chennai</title>
+  <meta name="description"
+    content="Crizgen is a premier web and mobile app development startup based in Chennai, India. We build high-performance web applications, iOS/Android apps, and modern UI/UX design systems.">
+  <meta name="keywords"
+    content="Crizgen, web development, mobile app development, UI/UX design, Chennai startup, software agency, React, Flutter, Node.js">
+  <meta name="author" content="Crizgen">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crizgen.com/">
+  <meta property="og:title" content="Crizgen | Web & Mobile App Development Company">
+  <meta property="og:description"
+    content="Engineering next-generation web platforms, native mobile applications, and intuitive UI/UX design. Based in Chennai, India.">
+  <meta property="og:image" content="https://crizgen.com/og-image.png">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://crizgen.com/">
+  <meta name="twitter:title" content="Crizgen | Web & Mobile App Development Company">
+  <meta name="twitter:description"
+    content="Engineering next-generation web platforms, native mobile applications, and intuitive UI/UX design. Based in Chennai, India.">
+  <meta name="twitter:image" content="https://crizgen.com/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================
+       1. STICKY MINIMAL NAVBAR
+       ========================================================= -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="navbar-container">
+      <!-- Crizgen Wordmark / Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Crizgen Home">
+        <span class="logo-symbol">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6a9 9 0 1 0 0 12"></path>
+            <circle cx="18" cy="12" r="1.5" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="logo-text">Crizgen<span class="logo-accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navMenu" aria-label="Primary Navigation">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#work" class="nav-item">Work</a>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="toggle-icon sun-icon" aria-hidden="true">
+            <!-- Sun SVG -->
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="toggle-icon moon-icon" aria-hidden="true">
+            <!-- Moon SVG -->
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Navbar Quote CTA (Desktop) -->
+        <a href="#contact" class="btn btn-sm btn-outline desktop-only">Get Quote</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobileDrawer"
+          aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <a href="#about" class="mobile-nav-item">About</a>
+        <a href="#work" class="mobile-nav-item">Work</a>
+        <a href="#services" class="mobile-nav-item">Services</a>
+        <a href="#contact" class="mobile-nav-item">Contact</a>
+        <div class="mobile-drawer-cta">
+          <a href="#contact" class="btn btn-primary btn-block">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       MAIN CONTENT
+       ========================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================
+         2. HERO SECTION
+         ======================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="ambient-glow" aria-hidden="true"></div>
+      <div class="container hero-container">
+
+        <!-- Startup Location Pill -->
+        <div class="badge-pill reveal-fade">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span class="badge-text">Startup Based in Chennai, India</span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="hero-title reveal-fade">
+          Engineering High-Performance <span class="gradient-text">Web &amp; Mobile</span> Digital Products
+        </h1>
+
+        <!-- One-Line Subtext / Tagline -->
+        <!-- TODO: replace tagline -->
+        <p class="hero-subtext reveal-fade">
+          We design and build fast, scalable web apps and mobile solutions that turn ambitious ideas into
+          market-defining experiences.
+        </p>
+        <!-- /TODO: replace tagline -->
+
+        <!-- Hero Call to Action Buttons -->
+        <div class="hero-actions reveal-fade">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Get a Free Quote</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#work" class="btn btn-ghost btn-lg">
+            <span>Explore Work</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Proof Highlights -->
+        <div class="hero-highlights reveal-fade">
+          <div class="highlight-item">
+            <span class="highlight-number">100%</span>
+            <span class="highlight-label">Custom Architecture</span>
+          </div>
+          <div class="highlight-divider" aria-hidden="true"></div>
+          <div class="highlight-item">
+            <span class="highlight-number">&lt;60ms</span>
+            <span class="highlight-label">Snappy Interactions</span>
+          </div>
+          <div class="highlight-divider" aria-hidden="true"></div>
+          <div class="highlight-item">
+            <span class="highlight-number">Chennai</span>
+            <span class="highlight-label">Headquartered Hub</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. ABOUT SECTION
+         ======================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-label">01 // ABOUT CRIZGEN</span>
+          <h2 class="section-title">Built for Founders and Businesses Demanding Craft &amp; Velocity</h2>
+          <p class="section-description">
+            Crizgen is a modern web and mobile product studio founded in Chennai, India. We bridge the gap between
+            creative visual artistry and robust, production-grade engineering to deliver products that perform
+            seamlessly under real-world scale.
+          </p>
+        </div>
+
+        <!-- 3 Key Strengths -->
+        <div class="grid grid-3 strengths-grid">
+
+          <!-- Strength 1 -->
+          <div class="card strength-card reveal-fade">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Engineering Precision</h3>
+            <p class="card-text">
+              We write clean, modular, and maintainable code built on battle-tested architectures. From sub-second page
+              loads to resilient APIs, your software is built to scale without technical debt.
+            </p>
+            <div class="strength-meta">
+              <span class="tag">Zero Bloat</span>
+              <span class="tag">High Performance</span>
+            </div>
+          </div>
+
+          <!-- Strength 2 -->
+          <div class="card strength-card reveal-fade">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Design-Led Innovation</h3>
+            <p class="card-text">
+              Great products marry utility with aesthetic delight. We craft bespoke interfaces, intuitive
+              micro-interactions, and accessible typography that elevate your brand and drive customer retention.
+            </p>
+            <div class="strength-meta">
+              <span class="tag">Design Systems</span>
+              <span class="tag">WCAG Accessible</span>
+            </div>
+          </div>
+
+          <!-- Strength 3 -->
+          <div class="card strength-card reveal-fade">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="card-title">Agile &amp; Direct Delivery</h3>
+            <p class="card-text">
+              No bloated agency bureaucracy or communication delays. You work directly with senior engineers and
+              designers through iterative weekly sprints, live demos, and total transparency.
+            </p>
+            <div class="strength-meta">
+              <span class="tag">Direct Access</span>
+              <span class="tag">Rapid Sprints</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. SERVICES SECTION
+         ======================================================= -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-label">02 // WHAT WE DELIVER</span>
+          <h2 class="section-title">End-to-End Digital Product Services</h2>
+          <p class="section-description">
+            Focused capabilities designed to take your digital products from early blueprint through enterprise scale.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-3 services-grid">
+
+          <!-- Service 1: Web Development -->
+          <article class="card service-card reveal-fade">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-name">Web Development</h3>
+            <p class="service-summary">
+              High-speed, SEO-optimized web applications and portals engineered with modern web standards and responsive
+              interfaces.
+            </p>
+            <ul class="service-feature-list">
+              <li>Full-Stack Web Applications (React, Node, TypeScript)</li>
+              <li>SaaS Dashboards &amp; Cloud Client Portals</li>
+              <li>Conversion-Focused High-Performance Landing Pages</li>
+              <li>API Development &amp; Third-Party Integrations</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="#contact" class="link-arrow">Request Web Proposal <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Service 2: Mobile App Development -->
+          <article class="card service-card reveal-fade">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-name">Mobile App Development</h3>
+            <p class="service-summary">
+              Native and cross-platform iOS &amp; Android applications built for silky-smooth 60fps performance and
+              intuitive interactions.
+            </p>
+            <ul class="service-feature-list">
+              <li>Cross-Platform iOS &amp; Android (Flutter / React Native)</li>
+              <li>Offline-First Capabilities &amp; Local Storage</li>
+              <li>Push Notifications, Geolocation &amp; Biometrics</li>
+              <li>App Store &amp; Google Play Production Deployment</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="#contact" class="link-arrow">Request App Proposal <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Service 3: UI/UX Design -->
+          <article class="card service-card reveal-fade">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-name">UI/UX Design</h3>
+            <p class="service-summary">
+              Human-centered interface designs, clickable prototypes, and unified design systems tailored to elevate
+              your brand.
+            </p>
+            <ul class="service-feature-list">
+              <li>Interactive Wireframing &amp; High-Fidelity Prototypes</li>
+              <li>Design Systems, Style Guides &amp; Component Libraries</li>
+              <li>User Journey Mapping &amp; Conversion Optimization</li>
+              <li>Design-to-Code Asset Hand-off &amp; Tokens</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="#contact" class="link-arrow">Request Design Proposal <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. PROCESS SECTION
+         ======================================================= -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-label">03 // OUR WORKFLOW</span>
+          <h2 class="section-title">A Proven 5-Stage Delivery Process</h2>
+          <p class="section-description">
+            From preliminary discussions through post-launch scaling, our structured framework ensures predictability
+            and technical rigor.
+          </p>
+        </div>
+
+        <!-- 5-Step Process Timeline -->
+        <div class="process-timeline">
+
+          <!-- Step 1: Discuss -->
+          <div class="process-step reveal-fade">
+            <div class="step-badge">
+              <span class="step-number">01</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Discuss</h3>
+              <p class="step-description">
+                We conduct an in-depth discovery session to dissect your business objectives, target audience personas,
+                feature priorities, and technical constraints to establish a realistic timeline.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2: Design -->
+          <div class="process-step reveal-fade">
+            <div class="step-badge">
+              <span class="step-number">02</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Design</h3>
+              <p class="step-description">
+                We blueprint information architecture, craft wireframes, and assemble interactive high-fidelity Figma
+                prototypes for your team to test and refine before writing a single line of code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3: Develop -->
+          <div class="process-step reveal-fade">
+            <div class="step-badge">
+              <span class="step-number">03</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Develop</h3>
+              <p class="step-description">
+                Our developers build modular, tested code in structured agile sprints. We maintain continuous
+                integration pipelines, automated linting, and weekly staging deployments for continuous review.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4: Launch -->
+          <div class="process-step reveal-fade">
+            <div class="step-badge">
+              <span class="step-number">04</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Launch</h3>
+              <p class="step-description">
+                We run comprehensive cross-browser and cross-device testing, stress test performance, verify
+                accessibility standards, and coordinate a seamless zero-downtime production release.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5: Support -->
+          <div class="process-step reveal-fade">
+            <div class="step-badge">
+              <span class="step-number">05</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Support</h3>
+              <p class="step-description">
+                We remain by your side post-launch with performance monitoring, security patch management, analytics
+                integration, and iterative feature enhancements as your user base expands.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         6. WORK SECTION (Sample Projects)
+         ======================================================= -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-label">04 // PORTFOLIO SHOWCASE</span>
+          <h2 class="section-title">Selected Sample Projects</h2>
+          <p class="section-description">
+            Explore concepts and prototype architectures demonstrating our design craftsmanship and engineering
+            standards.
+          </p>
+        </div>
+
+        <!-- 3 Placeholder Project Cards -->
+        <div class="grid grid-3 work-grid">
+
+          <!-- Project 1: FinPulse -->
+          <article class="card work-card reveal-fade">
+            <div class="work-preview">
+              <!-- Stylized Mockup Visual -->
+              <div class="mockup-header">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+                <span class="mockup-url">finpulse.crizgen.preview</span>
+              </div>
+              <div class="mockup-body fintech-mockup">
+                <div class="mockup-stat-row">
+                  <div class="mockup-stat-box">
+                    <span class="stat-caption">Total Balance</span>
+                    <span class="stat-value">$184,250.00</span>
+                  </div>
+                  <div class="mockup-stat-tag">+14.2%</div>
+                </div>
+                <!-- Sparkline SVG Chart -->
+                <div class="mockup-chart" aria-hidden="true">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none" class="chart-svg">
+                    <path d="M0 45 Q 30 20, 60 35 T 120 15 T 160 30 T 200 8 L 200 60 L 0 60 Z"
+                      fill="var(--accent-subtle)"></path>
+                    <path d="M0 45 Q 30 20, 60 35 T 120 15 T 160 30 T 200 8" fill="none" stroke="var(--accent)"
+                      stroke-width="2.5"></path>
+                  </svg>
+                </div>
+                <div class="mockup-activity-list">
+                  <div class="activity-item">
+                    <span class="act-dot"></span>
+                    <span class="act-text">Automated Portfolio Rebalance</span>
+                    <span class="act-status">Success</span>
+                  </div>
+                  <div class="activity-item">
+                    <span class="act-dot"></span>
+                    <span class="act-text">Real-Time Yield Indexing</span>
+                    <span class="act-status">Live</span>
+                  </div>
+                </div>
+              </div>
+              <span class="work-sample-badge">Sample Project</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-category">Web Development &amp; SaaS</span>
+              </div>
+              <h3 class="work-title">FinPulse Analytics</h3>
+              <p class="work-desc">
+                High-frequency wealth intelligence dashboard offering institutional-grade real-time market telemetry and
+                sub-second asset modeling.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: OmniDeliver -->
+          <article class="card work-card reveal-fade">
+            <div class="work-preview">
+              <!-- Stylized Mobile Mockup Visual -->
+              <div class="mockup-header">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+                <span class="mockup-url">omnideliver.app.preview</span>
+              </div>
+              <div class="mockup-body mobile-mockup">
+                <div class="mobile-phone-frame">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen-content">
+                    <div class="delivery-status-pill">
+                      <span class="pulse-indicator"></span>
+                      <span>Courier En Route · ETA 8 mins</span>
+                    </div>
+                    <div class="delivery-map-sim">
+                      <div class="map-route-line"></div>
+                      <div class="map-pin user-pin">📍</div>
+                      <div class="map-pin driver-pin">🛵</div>
+                    </div>
+                    <div class="delivery-info-card">
+                      <span class="pkg-title">Order #CG-9842</span>
+                      <span class="pkg-sub">Express Delivery · In Transit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="work-sample-badge">Sample Project</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-category">Mobile App Development</span>
+              </div>
+              <h3 class="work-title">OmniDeliver Mobile</h3>
+              <p class="work-desc">
+                Dual-sided cross-platform courier and consumer mobile application with live GPS vector tracking, instant
+                notifications, and offline caching.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AuraHealth -->
+          <article class="card work-card reveal-fade">
+            <div class="work-preview">
+              <!-- Stylized Healthcare Mockup Visual -->
+              <div class="mockup-header">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+                <span class="mockup-url">aurahealth.design.preview</span>
+              </div>
+              <div class="mockup-body health-mockup">
+                <div class="telehealth-card">
+                  <div class="doctor-badge">
+                    <div class="doctor-avatar">Dr</div>
+                    <div class="doctor-meta">
+                      <span class="doc-name">Dr. Radhika Sharma</span>
+                      <span class="doc-role">Cardiologist · Available</span>
+                    </div>
+                  </div>
+                  <div class="health-vital-grid">
+                    <div class="vital-item">
+                      <span class="vital-label">Heart Rate</span>
+                      <span class="vital-val">72 bpm</span>
+                    </div>
+                    <div class="vital-item">
+                      <span class="vital-label">SpO2</span>
+                      <span class="vital-val">99%</span>
+                    </div>
+                    <div class="vital-item">
+                      <span class="vital-label">Blood Pressure</span>
+                      <span class="vital-val">118/76</span>
+                    </div>
+                  </div>
+                  <div class="telehealth-action-bar">
+                    <span class="call-btn-mock">Start HD Video Consult</span>
+                  </div>
+                </div>
+              </div>
+              <span class="work-sample-badge">Sample Project</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-category">UI/UX Design &amp; Web</span>
+              </div>
+              <h3 class="work-title">AuraHealth Platform</h3>
+              <p class="work-desc">
+                An empathetic telehealth design system and patient consultation portal engineered for accessible digital
+                healthcare and clinical clarity.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Design System</span>
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Next.js</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         7. CONTACT SECTION
+         ======================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-label">05 // GET IN TOUCH</span>
+          <h2 class="section-title">Let&rsquo;s Build Your Next Digital Product</h2>
+          <p class="section-description">
+            Share your project roadmap or reach out directly. Our engineering team in Chennai typically reviews and
+            responds within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Information & Quick Channels -->
+          <div class="contact-info-panel reveal-fade">
+            <h3 class="panel-title">Direct Inquiries</h3>
+            <p class="panel-desc">
+              Whether you are launching a prototype, refactoring an existing system, or seeking design consultation, we
+              are ready to partner with you.
+            </p>
+
+            <div class="contact-details-list">
+
+              <!-- Email Placeholder -->
+              <div class="contact-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Email Us</span>
+                  <!-- TODO: replace contact -->
+                  <a href="mailto:hello@crizgen.com" class="detail-link">hello@crizgen.com</a>
+                  <!-- /TODO: replace contact -->
+                </div>
+              </div>
+
+              <!-- Phone Placeholder -->
+              <div class="contact-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Call Us</span>
+                  <!-- TODO: replace contact -->
+                  <a href="tel:+910000000000" class="detail-link">+91 00000 00000</a>
+                  <!-- /TODO: replace contact -->
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-plain">Chennai, Tamil Nadu, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- WhatsApp Direct Link -->
+            <div class="whatsapp-direct-box">
+              <span class="whatsapp-badge-label">Instant Messaging</span>
+              <!-- TODO: replace contact -->
+              <a href="https://wa.me/910000000000?text=Hi%20Crizgen,%20I'd%20like%20to%20discuss%20a%20new%20project."
+                target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-direct"
+                aria-label="Chat directly on WhatsApp (opens in new tab)">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.476-.15-.677.15-.2.301-.777.98-.952 1.18-.175.2-.351.226-.652.075s-1.272-.469-2.424-1.496c-.896-.799-1.501-1.786-1.677-2.087-.175-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.15-.176.2-.301.301-.501.1-.2.05-.376-.025-.526s-.677-1.631-.928-2.235c-.244-.588-.493-.508-.677-.518-.175-.008-.376-.01-.577-.01s-.526.075-.802.376c-.276.301-1.053 1.028-1.053 2.508s1.078 2.909 1.228 3.11c.15.2 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.635.721.23 1.378.197 1.9.12.581-.087 1.782-.727 2.032-1.429.25-.701.25-1.303.175-1.429-.075-.125-.276-.2-.577-.35zM12.04 2C6.516 2 2.028 6.488 2.028 12.012c0 1.986.58 3.844 1.583 5.412L2 22l4.733-1.554c1.513.882 3.27 1.385 5.144 1.385 5.524 0 10.012-4.488 10.012-10.012S17.564 2 12.04 2zm0 18.232c-1.636 0-3.17-.487-4.46-1.325l-.32-.207-2.809.923.938-2.738-.227-.337a8.21 8.21 0 0 1-1.353-4.536c0-4.543 3.696-8.24 8.231-8.24 4.536 0 8.232 3.697 8.232 8.24 0 4.544-3.696 8.24-8.232 8.24z" />
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </a>
+              <!-- /TODO: replace contact -->
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel reveal-fade">
+            <h3 class="panel-title">Send a Message</h3>
+            <p class="panel-desc">Fill out the form below and we will prepare a tailored proposal for your review.</p>
+
+            <!-- TODO: Replace with your Formspree endpoint (e.g. https://formspree.io/f/your_form_id) or Web3Forms access key -->
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="userName" class="form-label">Your Name <span class="required-star">*</span></label>
+                <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Rahul Sundaram"
+                  required autocomplete="name">
+                <span class="field-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Email Address <span class="required-star">*</span></label>
+                <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. rahul@example.com"
+                  required autocomplete="email">
+                <span class="field-error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <!-- Service Selection -->
+              <div class="form-group">
+                <label for="userService" class="form-label">Service Needed</label>
+                <select id="userService" name="service" class="form-select">
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Full-Stack Package">Full-Stack Package (Web + Mobile + Design)</option>
+                  <option value="Other Inquiries">Other / General Inquiry</option>
+                </select>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Project Details <span class="required-star">*</span></label>
+                <textarea id="userMessage" name="message" class="form-textarea" rows="4"
+                  placeholder="Briefly describe your goals, timeline, and current requirements..." required></textarea>
+                <span class="field-error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <!-- Submission Notice / Feedback Container -->
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                <span class="btn-text">Submit Project Inquiry</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+            <!-- /TODO: Replace with your Formspree endpoint -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       8. FOOTER
+       ========================================================= -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+
+      <!-- Footer Brand Column -->
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo" aria-label="Crizgen Home">
+          <span class="logo-symbol">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6a9 9 0 1 0 0 12"></path>
+              <circle cx="18" cy="12" r="1.5" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span class="logo-text">Crizgen<span class="logo-accent-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">
+          Engineering high-impact web and mobile products for ambitious startups and businesses worldwide.
+        </p>
+        <div class="footer-hq">
+          <span class="hq-pin" aria-hidden="true">📍</span>
+          <span>Chennai, Tamil Nadu, India</span>
+        </div>
+      </div>
+
+      <!-- Footer Navigation Links -->
+      <div class="footer-nav-group">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#work">Featured Work</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#process">Development Process</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Services -->
+      <div class="footer-nav-group">
+        <h4 class="footer-heading">Core Services</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#services">Web Application Development</a></li>
+          <li><a href="#services">iOS &amp; Android Apps</a></li>
+          <li><a href="#services">UI/UX &amp; Design Systems</a></li>
+          <li><a href="#services">Cloud &amp; API Integration</a></li>
+          <li><a href="#services">Maintenance &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Social & Connect -->
+      <div class="footer-nav-group">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p class="footer-social-intro">Follow our latest releases and engineering insights:</p>
+        <div class="footer-social-links">
+
+          <!-- GitHub -->
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="GitHub profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="LinkedIn profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+          </a>
+
+          <!-- X / Twitter -->
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="X Twitter profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="Instagram profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Back-to-Top -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Crizgen (crizgen.com). All rights reserved. Crafted in Chennai,
+          India.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#hero" class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+            <span>Back to Top</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================= -->
+  <!-- TODO: replace contact -->
+  <a href="https://wa.me/910000000000?text=Hello%20Crizgen,%20I'm%20interested%20in%20discussing%20a%20project."
+    class="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer" id="floatingWhatsApp"
+    aria-label="Chat with Crizgen on WhatsApp (opens in new tab)">
+    <span class="whatsapp-tooltip">Chat with us</span>
+    <span class="whatsapp-pulse-ring" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.476-.15-.677.15-.2.301-.777.98-.952 1.18-.175.2-.351.226-.652.075s-1.272-.469-2.424-1.496c-.896-.799-1.501-1.786-1.677-2.087-.175-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.15-.176.2-.301.301-.501.1-.2.05-.376-.025-.526s-.677-1.631-.928-2.235c-.244-.588-.493-.508-.677-.518-.175-.008-.376-.01-.577-.01s-.526.075-.802.376c-.276.301-1.053 1.028-1.053 2.508s1.078 2.909 1.228 3.11c.15.2 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.635.721.23 1.378.197 1.9.12.581-.087 1.782-.727 2.032-1.429.25-.701.25-1.303.175-1.429-.075-.125-.276-.2-.577-.35zM12.04 2C6.516 2 2.028 6.488 2.028 12.012c0 1.986.58 3.844 1.583 5.412L2 22l4.733-1.554c1.513.882 3.27 1.385 5.144 1.385 5.524 0 10.012-4.488 10.012-10.012S17.564 2 12.04 2zm0 18.232c-1.636 0-3.17-.487-4.46-1.325l-.32-.207-2.809.923.938-2.738-.227-.337a8.21 8.21 0 0 1-1.353-4.536c0-4.543 3.696-8.24 8.231-8.24 4.536 0 8.232 3.697 8.232 8.24 0 4.544-3.696 8.24-8.232 8.24z" />
+    </svg>
+  </a>
+  <!-- /TODO: replace contact -->
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+
+</html>
