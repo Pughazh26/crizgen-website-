@@ -51,9 +51,9 @@ Replace the paragraph if you want to change the tagline.
 In `index.html`, search for `<!-- TODO: replace contact -->`:
 - **Email**: Update `hello@crizgen.com` and its `href="mailto:..."`
 - **Phone**: Update `+91 00000 00000` and its `href="tel:..."`
-- **WhatsApp**: Update the number in both WhatsApp buttons' `whatsapp://` links. These links open WhatsApp directly when the app is installed:
+- **WhatsApp**: Update the number in both WhatsApp buttons' `https://wa.me/` links. This official click-to-chat link opens the app when supported or offers WhatsApp Web:
   ```html
-  href="whatsapp://send?phone=910000000000&text=Hello%20Crizgen..."
+  href="https://wa.me/910000000000?text=Hello%20Crizgen..."
   ```
   *(Replace `910000000000` with your country code and WhatsApp phone number without spaces or symbols)*.
 
