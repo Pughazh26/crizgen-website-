@@ -45,7 +45,7 @@ Temporary values and dummy contact details are flagged with standard `TODO` comm
 The hero tagline in `index.html` is:
 ```html
 <p class="hero-subtext reveal-fade">
-  Simple start. Scalable growth.
+  We design and build fast, scalable web apps and mobile solutions that turn ambitious ideas into market-defining experiences.
 </p>
 ```
 Replace the paragraph if you want to change the tagline.
