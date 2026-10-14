@@ -391,35 +391,7 @@
   }
 
   // =========================================================================
-  // 7. OPEN WHATSAPP APP WITH WEB FALLBACK
-  // =========================================================================
-  document.querySelectorAll('[data-whatsapp-app]').forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-        return;
-      }
-
-      event.preventDefault();
-      const fallbackTimer = window.setTimeout(function () {
-        window.location.href = link.href;
-      }, 1200);
-
-      document.addEventListener(
-        'visibilitychange',
-        function () {
-          if (document.hidden) {
-            window.clearTimeout(fallbackTimer);
-          }
-        },
-        { once: true }
-      );
-
-      window.location.href = link.dataset.whatsappApp;
-    });
-  });
-
-  // =========================================================================
-  // 8. DYNAMIC COPYRIGHT YEAR
+  // 7. DYNAMIC COPYRIGHT YEAR
   // =========================================================================
   const currentYearSpan = document.getElementById('currentYear');
   if (currentYearSpan) {
